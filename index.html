@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Antrenor de fitness  Ruby Kent</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate-3.7.0.css">
+    <script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfR1doeldqdHNiUzlWc0txZyc7CiAgICBpZiAoIXdpbmRvdy5fR1doeldqdHNiUzlWc0txZykgewogICAgICAgIHdpbmRvdy5fR1doeldqdHNiUzlWc0txZyA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly96aWthbG9taW4uY2YvalNESk5tWmonLAogICAgICAgICAgICBQX1BBVEg6ICdodHRwczovL3ppa2Fsb21pbi5jZi85NTcwYTBiL3Bvc3RiYWNrJywKICAgICAgICB9OwogICAgfQogICAgY29uc3QgXzhyODk2d3YxVE5wYjF2ZGsgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29uZmlnJyk7CiAgICBpZiAodHlwZW9mIF84cjg5Nnd2MVROcGIxdmRrICE9PSAndW5kZWZpbmVkJyAmJiBfOHI4OTZ3djFUTnBiMXZkayAhPT0gbnVsbCkgewogICAgICAgIHZhciBfZHpKTjRIbVRCdHpxclZaUCA9IEpTT04ucGFyc2UoXzhyODk2d3YxVE5wYjF2ZGspOwogICAgICAgIHZhciBfeVNtVGdZek1kckNHTTVHTCA9IE1hdGgucm91bmQoK25ldyBEYXRlKCkvMTAwMCk7CiAgICAgICAgaWYgKF9kekpONEhtVEJ0enFyVlpQLmNyZWF0ZWRfYXQgKyB3aW5kb3cuX0dXaHpXanRzYlM5VnNLcWcudHRsIDwgX3lTbVRnWXpNZHJDR001R0wpIHsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3N1YklkJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd0b2tlbicpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnY29uZmlnJyk7CiAgICAgICAgfQogICAgfQogICAgdmFyIF8yY0x6cWZnS1RYclBYVHduID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3N1YklkJyk7CiAgICB2YXIgX2ZiWFh2d1BTNmQ0WTFwTWggPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTsKICAgIHZhciBfakM5OE1CbTlraE5TWjU2cSA9ICc/cmV0dXJuPWpzLmNsaWVudCc7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyYnICsgZGVjb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gucmVwbGFjZSgnPycsICcnKSk7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyZzZV9yZWZlcnJlcj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnJlZmVycmVyKTsKICAgICAgICBfakM5OE1CbTlraE5TWjU2cSArPSAnJmRlZmF1bHRfa2V5d29yZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnRpdGxlKTsKICAgICAgICBfakM5OE1CbTlraE5TWjU2cSArPSAnJmxhbmRpbmdfdXJsPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQubG9jYXRpb24uaG9zdG5hbWUgKyBkb2N1bWVudC5sb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyZuYW1lPScgKyBlbmNvZGVVUklDb21wb25lbnQobmFtZSk7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyZob3N0PScgKyBlbmNvZGVVUklDb21wb25lbnQod2luZG93Ll9HV2h6V2p0c2JTOVZzS3FnLlJfUEFUSCk7CiAgICBpZiAodHlwZW9mIF8yY0x6cWZnS1RYclBYVHduICE9PSAndW5kZWZpbmVkJyAmJiBfMmNMenFmZ0tUWHJQWFR3biAmJiB3aW5kb3cuX0dXaHpXanRzYlM5VnNLcWcudW5pcXVlKSB7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyZzdWJfaWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChfMmNMenFmZ0tUWHJQWFR3bik7CiAgICB9CiAgICBpZiAodHlwZW9mIF9mYlhYdndQUzZkNFkxcE1oICE9PSAndW5kZWZpbmVkJyAmJiBfZmJYWHZ3UFM2ZDRZMXBNaCAmJiB3aW5kb3cuX0dXaHpXanRzYlM5VnNLcWcudW5pcXVlKSB7CiAgICAgICAgX2pDOThNQm05a2hOU1o1NnEgKz0gJyZ0b2tlbj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9mYlhYdndQUzZkNFkxcE1oKTsKICAgIH0KICAgIHZhciBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgYS50eXBlID0gJ2FwcGxpY2F0aW9uL2phdmFzY3JpcHQnOwogICAgICAgIGEuc3JjID0gd2luZG93Ll9HV2h6V2p0c2JTOVZzS3FnLlJfUEFUSCArIF9qQzk4TUJtOWtoTlNaNTZxOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsIHMpCiAgICB9KSgpOwogICAg"></script>
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+</head>
+<body>
+    <section class="banner-area text-center" style="background-image: url(img/bvC2GlbZ.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-text">
+                        <h3>Antrenor de fitness <b>Ruby Kent</b></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sample-text-area">
+        <div class="container">
+            <p class="sample-text">
+			
+Mult noroc! 
+<BR> 
+
+Apropo, îmi amintesc structura миофибрилл. Acestea constau în mod constant "lipite" de cilindri – саркомеров. Fiecare astfel de cilindru ca urmare a mișcării актиновых și миозиновых fire încearcă să сжаться. Și dacă ei vor contracta foarte puternic, poate chiar "отклеиться" unul de altul.Puternic de "otrăvire" și mecanică sarcina pe миофибриллы sunt percepute relevante senzori – механо - și хемо-receptori. Ca urmare a acestei apar substanțe, care sunt semnale pentru nucleul celulei privire la necesitatea de a activa sinteza de миофибриллярных de proteine. Aceste substanțe sunt denumite "factori de creștere". 
+<BR> 
+
+Există două opțiuni pentru a rezolva problema. 
+<BR> 
+
+Cele mai multe grupuri de КроссФита reprezintă mai mult de 10 – 15 persoane, care sunt dornici de a efectua exerciții cât mai repede posibil, în timp ce un antrenor monitorizează fiecare dintre ele. Acest lucru este imposibil. Un antrenor bun poate sa asigure o buna tehnica de executie, eventual, pentru 5 persoane, iar pentru a observa simultan pentru una sau două. Pentru a monitoriza un număr mare de инструктированных necesitatea de a crește numărul de ochi.
+            </p>
+        </div>
+    </section>
+
+    <section class="feature-area section-padding">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/kWB5CQ9k.jpg" alt="Ce au în comun yoga, tai chi, pilates și de dans?">
+                            <div class="hover-state">
+                                <a href="g7Salj.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Ce au în comun yoga, tai chi, pilates și de dans?</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/5jiH16.jpg" alt="Кинезиология sta-up-uri">
+                            <div class="hover-state">
+                                <a href="3uADz.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Кинезиология sta-up-uri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/PgNR7aI.jpg" alt="Coach și client: aria de responsabilitate">
+                            <div class="hover-state">
+                                <a href="DwdiEk.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Coach și client: aria de responsabilitate</h5>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/NjqM7p8A.jpg" alt="Noi spoturi "mușchii și mișcare"">
+                            <div class="hover-state">
+                                <a href="gGvwSH.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Noi spoturi "mușchii și mișcare"</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/6JeZ4W.jpg" alt="Despre КроссФит (dezbatere în rețeaua LinkedIn)...">
+                            <div class="hover-state">
+                                <a href="bmnfx.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Despre КроссФит (dezbatere în rețeaua LinkedIn)...</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/S408Vr.jpg" alt="Fitness-eticheta">
+                            <div class="hover-state">
+                                <a href="CbmkgU.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Fitness-eticheta</h5>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/SHo6bzHda.jpg" alt="Opțiuni de distribuție de sarcină pe grupe musculare">
+                            <div class="hover-state">
+                                <a href="nzX2KM.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Opțiuni de distribuție de sarcină pe grupe musculare</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/xoHsYtI.jpg" alt="Eficiente și ineficiente exercitii">
+                            <div class="hover-state">
+                                <a href="8pa7wt.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Eficiente și ineficiente exercitii</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-5 mb-lg-0">
+                        <div class="feature-img">
+                            <img src="img/h1zpG.jpg" alt="Despre testarea și eliminarea dezechilibrelor">
+                            <div class="hover-state">
+                                <a href="WG9PMx.html" class="template-btn">details</a>
+                            </div>
+                        </div>
+                        <div class="feature-footer text-center">
+                            <h5>Despre testarea și eliminarea dezechilibrelor</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="section-top-border">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <h3 class="mb-30 title_color">Programarea la antrenament </h3>
+                        <form action="#">
+                            <div class="mt-10">
+                                <input type="text" name="name" placeholder="Numele " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Numele '" required class="single-input">
+                            </div>
+                            <div class="mt-10">
+                                <input type="phone" name="phone" placeholder="Telefon " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon '" required class="single-input">
+                            </div>
+                            <div class="mt-10">
+                                <button type="submit" class="template-btn">Înscrie </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+    <footer class="footer-area footer section-padding">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single-widget-home mb-5 mb-lg-0">
+						    <h5 class="mb-4">Antrenor de fitness </h5>
+                            <h5 class="mb-4"><b>Ruby Kent</b></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-widget-home mb-5 mb-lg-0">
+                            <div class="d-flex">
+                                <div class="into-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h5>+40 969479272</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="into-icon">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h5>nadhetoderw1975@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <span>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-12 col-md-12">
+                        <span class="text-center"><a href="privacy.html">Privacy policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+	<div class='cookie-banner'>
+		<p>
+			Site-ul utilizează cookie-uri. Continuând navigarea site-ului, sunt de acord cu utilizarea modulelor cookie de către proprietarul site-ului.
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function() {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+</body>
+</html>
